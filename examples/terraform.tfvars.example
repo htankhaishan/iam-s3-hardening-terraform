@@ -1,0 +1,17 @@
+aws_region    = "ap-south-1"
+project_name  = "iam-s3-hardening"
+environment   = "lab"
+force_destroy = false
+
+# Use example or lab principal ARNs only. Do not commit real user, role, or account identifiers.
+allowed_read_principal_arns = [
+  "arn:aws:iam::111122223333:role/example-readonly-role"
+]
+
+allowed_write_principal_arns = [
+  "arn:aws:iam::111122223333:role/example-writer-role"
+]
+
+additional_tags = {
+  Owner = "portfolio"
+}
