@@ -1,0 +1,55 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.tfplan
+*.tfvars
+*.tfvars.json
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Cloud credentials
+credentials
+config
+aws_credentials
+.aws/
+.azure/
+.gcloud/
+
+# Kubernetes
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+.kube/
+
+# Tool caches and reports that may include sensitive paths/data
+.trivy/
+.checkov/
+.scannerwork/
+*.sarif
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
